@@ -11,7 +11,7 @@ To achieve this mechanically, we create layers. Our initial layers should be abl
 
 - Receptive Fields.
 
-  ![Response form CharGPT ](/images/Screenshot from 2022-12-16 23-01-56.png)
+  ![Response form CharGPT ](https://github.com/Code-Trees/Extensive_CV/blob/main/Neural%20Architecture/images/Screenshot%20from%202022-12-16%2023-01-56.png)
 
 For a Network Like 
 
@@ -71,11 +71,11 @@ Receptive field Looks like
 
   
 
-  ![kernel.png](/images/kernel.png)
+  ![kernel.png](https://github.com/Code-Trees/Extensive_CV/blob/main/Neural%20Architecture/images/kernel.png)
 
   
 
   The outcome of the initial Layer of Convolution may look like this for MNIST.
 
-![after_conv]()
+![after_conv](https://github.com/Code-Trees/Extensive_CV/blob/main/Neural%20Architecture/images/after_conv.png)
 
