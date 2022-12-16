@@ -11,7 +11,7 @@ To achieve this mechanically, we create layers. Our initial layers should be abl
 
 - Receptive Fields.
 
-  ![Response form CharGPT ](/home/jd/Desktop/Computer vision/Extensive_CV/Neural Architecture/images/Screenshot from 2022-12-16 23-01-56.png)
+  ![Response form CharGPT ](/images/Screenshot from 2022-12-16 23-01-56.png)
 
 For a Network Like 
 
@@ -71,11 +71,11 @@ Receptive field Looks like
 
   
 
-  ![kernel.png](/home/jd/Desktop/Computer vision/Extensive_CV/Neural Architecture/images/kernel.png)
+  ![kernel.png](/images/kernel.png)
 
   
 
   The outcome of the initial Layer of Convolution may look like this for MNIST.
 
-![after_conv](/home/jd/Desktop/Computer vision/Extensive_CV/Neural Architecture/images/after_conv.png)
+![after_conv]()
 
