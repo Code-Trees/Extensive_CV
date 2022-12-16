@@ -69,7 +69,13 @@ Receptive field Looks like
 
   If we look at 3*3 Kernels in a Conv Layers after trainning itr might look like bellow.
 
+  
+
   ![kernel.png](/home/jd/Desktop/Computer vision/Extensive_CV/Neural Architecture/images/kernel.png)
 
   
+
+  The outcome of the initial Layer of Convolution may look like this for MNIST.
+
+![after_conv](/home/jd/Desktop/Computer vision/Extensive_CV/Neural Architecture/images/after_conv.png)
 
