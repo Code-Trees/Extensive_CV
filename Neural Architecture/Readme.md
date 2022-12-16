@@ -69,7 +69,7 @@ Receptive field Looks like
 
   If we look at 3*3 Kernels in a Conv Layers after trainning itr might look like bellow.
 
-  ![Screenshot from 2022-12-16 23-14-20](/home/jd/Desktop/Computer vision/Extensive_CV/Neural Architecture/images/Screenshot from 2022-12-16 23-14-20.png)
+  ![kernel.png](/home/jd/Desktop/Computer vision/Extensive_CV/Neural Architecture/images/kernel.png)
 
   
 
