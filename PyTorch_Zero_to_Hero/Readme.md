@@ -121,13 +121,25 @@ Train ==>Batch:468,Total-loss=0.02316,Acc1=99.88%,Acc2=99.63: 100%|███| 46
 Test ==> batch:78, Average loss: 0.0005 Accuracy1: 99.10 % ,Accuracy2:98.97%: 100%|█| 79/79 [00:00<00:00,
 ```
 
-y_pred1,y_pred2 = model(data1,data2)  # Getting the Model output for a batch 
-loss1,loss2 = total_loss(y_pred1, target1,y_pred2, target2.argmax(dim = 1)) #Calculating total loss from a custom function 
-test_losses1 += loss1.item() # sum up batch loss1 MNIST
-test_losses2 += loss2.item() # sum up batch loss2 Adder
-pred = y_pred1.argmax(dim=1, keepdim=True)  # get the index of the max log-probability
-correct += pred.eq(target1.view_as(pred)).sum().item() #Chceking the correct class for Image 
-second_correct += y_pred2.argmax(dim =1).eq(target2.argmax(dim = 1)).sum().item() #Chceking the correct class for Summ function 
+```
+  for batch_idx, (data1,target1,data2,target2) in enumerate(pbar):
+        # get samples
+        data1, target1 = data1.to(device), target1.to(device)
+        data2, target2 = data2.to(device), target2.to(device)
+        # Init
+        optimizer.zero_grad()
+        # In PyTorch, we need to set the gradients to zero before starting to do backpropragation because PyTorch accumulates the gradients on subsequent backward passes. 
+        # Because of this, when you start your training loop, ideally you should zero out the gradients so that you do the parameter update correctly.
+
+        # Predict
+        y_pred1,y_pred2 = model(data1,data2)
+
+        # Calculate loss
+        loss1,loss2 = total_loss(y_pred1, target1,y_pred2, target2.argmax(dim = 1))
+        loss = loss1+loss2
+        train_losses_image.append(loss1.item())
+        train_losses_random.append(loss2.item())
+```
 
 **5>What loss function you picked and why ?**
 For The **MNISt (CNN) model ** We are using the Loss function as The negative log likelihood loss.
