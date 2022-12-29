@@ -15,7 +15,7 @@ MNISTRandom_loader Is the data loader which Gives us the required data for the m
 
 To understand Better let's Visualise the Graph.
 
-![model_view](./model_view.svg)
+![model_view](model_view.svg)
 
 
 
@@ -64,7 +64,7 @@ Green box: the same as the Gray box, except it is the starting point for the com
 
 Above is the Loss graph for the model. The Loss is the combination of Loss 1 And Loss 2. where Loss one is F.nll_loss(y_pred1, target1) and Loss 2 is nn.CrossEntropyLoss(). To do this calculation of loss we have created a function total_loss.
 
-![loss](./loss.png)
+![loss](loss.png)
 
 
 
@@ -136,7 +136,7 @@ second_correct += y_pred2.argmax(dim =1).eq(target2.argmax(dim = 1)).sum().item(
 For The **MNISt (CNN) model ** We are using the Loss function as The negative log likelihood loss.
 The negative log-likelihood is bad at smaller values, where it can reach infinite (that's too sad), and becomes good at larger values. Because we are summing the loss function to all the correct classes, what's actually happening is that whenever the network assigns high confidence at the correct class, the unhappiness is low, and vice-versa. The input given through a forward call is expected to contain log-probabilities of each class. Means it needs a LogSoftmax layer before this .
 
-Formula: ![crossentrophy](./crossentrophy.webp)
+Formula: ![crossentrophy](crossentrophy.webp)
 
 
 
@@ -147,7 +147,7 @@ because from the PyTorch Documentation I learned that Obtaining log-probabilitie
 
 As we don't have a LogSoftmax layer in MNISTadder (Summing ) model .
 
-![crossentrophy1](./crossentrophy1.webp)
+![crossentrophy1](crossentrophy1.webp)
 
 
 
