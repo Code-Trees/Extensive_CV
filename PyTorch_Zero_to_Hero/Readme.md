@@ -15,8 +15,7 @@ MNISTRandom_loader Is the data loader which Gives us the required data for the m
 
 To understand Better let's Visualise the Graph.
 
-![model_view](image/model_view.svg)
-
+![model_view](https://user-images.githubusercontent.com/6880439/209983633-7496cfbd-966b-484c-a4a6-23b6be639c0b.svg)
 
 Blue boxes: these correspond to the tensors we use as parameters, the ones we’re asking PyTorch to compute gradients for;
 Gray box: a Python operation that involves a gradient-computing tensor or its dependencies;
@@ -61,8 +60,7 @@ Green box: the same as the Gray box, except it is the starting point for the com
 
 Above is the Loss graph for the model. The Loss is the combination of Loss 1 And Loss 2. where Loss one is F.nll_loss(y_pred1, target1) and Loss 2 is nn.CrossEntropyLoss(). To do this calculation of loss we have created a function total_loss.
 
-![loss](image/loss.png)
-
+![loss](https://user-images.githubusercontent.com/6880439/209983658-d680f9ef-e252-4ecc-8277-ea457aa479c9.png)
 
 
 Training model Epochs
@@ -133,8 +131,8 @@ second_correct += y_pred2.argmax(dim =1).eq(target2.argmax(dim = 1)).sum().item(
 For The **MNISt (CNN) model ** We are using the Loss function as The negative log likelihood loss.
 The negative log-likelihood is bad at smaller values, where it can reach infinite (that's too sad), and becomes good at larger values. Because we are summing the loss function to all the correct classes, what's actually happening is that whenever the network assigns high confidence at the correct class, the unhappiness is low, and vice-versa. The input given through a forward call is expected to contain log-probabilities of each class. Means it needs a LogSoftmax layer before this .
 
-Formula: ![crossentrophy](image/crossentrophy.webp)
 
+![crosstab](https://user-images.githubusercontent.com/6880439/209983906-895b4a83-ca1f-45c4-a3ea-e86a14f4e509.png)
 
 
 For the Numeric model I tried CrossEntropyLoss.
@@ -142,7 +140,8 @@ because from the PyTorch Documentation I learned that Obtaining log-probabilitie
 
 As we don't have a LogSoftmax layer in MNISTadder (Summing ) model .
 
-![crossentrophy1](image/crossentrophy1.webp)
+![crossentrophy1](image/crossentrophy1.webp)![crossentrophy1](https://user-images.githubusercontent.com/6880439/209983892-66e65e9e-c6d0-4801-bbba-e38b0d438cdf.png)
+
 
 Formula: $$ loss(x,class)=−log( ∑ j​exp(x[j]) exp(x[class])​)=−x[class]+log( j ∑​exp(x[j])) $$
 
@@ -153,11 +152,7 @@ referace: https://medium.com/unpackai/cross-entropy-loss-in-ml-d9f22fc11fe0#:~:t
 **6>MUST happen on the GPU**
 Created A GPU checker function To return the GPU information.
 
-![Screenshot from 2022-12-29 21-31-50](image/Screenshot from 2022-12-29 21-31-50.png)
-
-
-
-
+![Screenshot from 2022-12-29 21-31-50](https://user-images.githubusercontent.com/6880439/209983921-9bfb6222-1b19-4154-815e-b88bfeb4b72d.png)
 
 
 
