@@ -14,9 +14,8 @@ MNISTRandom_loader Is the data loader which Gives us the required data for the m
 ​ Now we have to combine the Two inputs to pass in the model. To do so once we have the data from data loader we train the model 1 i.e MNISt with the image data and return the features of shape [1,10]. Then we have the MNISTadder which needs to be trained for the sum function. for that we have concatenated the Output on model 1 and input using torch.cat([mnist_d,Num],dim = -1) . where mnist_d is of [1,10] shape and Num is [1,10] shape . Output of the concatenation is [1,20] shape .
 
 To understand Better let's Visualise the Graph.
-<p>
+
 ![model_view](image/model_view.svg)
-<p>
 
 
 Blue boxes: these correspond to the tensors we use as parameters, the ones we’re asking PyTorch to compute gradients for;
