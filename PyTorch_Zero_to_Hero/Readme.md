@@ -61,7 +61,11 @@ Green box: the same as the Gray box, except it is the starting point for the com
 Above is the Loss graph for the model. The Loss is the combination of Loss 1 And Loss 2. where Loss one is F.nll_loss(y_pred1, target1) and Loss 2 is nn.CrossEntropyLoss(). To do this calculation of loss we have created a function total_loss.
 
 ![loss](https://user-images.githubusercontent.com/6880439/209983658-d680f9ef-e252-4ecc-8277-ea457aa479c9.png)
+![download1](https://user-images.githubusercontent.com/6880439/209984298-56ca476b-3205-4fe1-8b26-34229e292827.png)
 
+![download1](https://user-images.githubusercontent.com/6880439/209984314-3fc338ff-8944-46be-abdd-d29fad03de5b.png)
+![download4](https://user-images.githubusercontent.com/6880439/209984317-941f55a8-0203-4300-afdb-c96f8f704207.png)
+![download5](https://user-images.githubusercontent.com/6880439/209984322-d49ef84b-df24-492c-9cd0-727afdc4a765.png)
 
 Training model Epochs
 
@@ -159,3 +163,11 @@ Created A GPU checker function To return the GPU information.
 # Checking the TRUTH :-)
 next(model2.parameters()).is_cuda
 True
+
+**Some Wrong Images**
+![download](https://user-images.githubusercontent.com/6880439/209984133-9bec7d8b-a553-45de-91e8-b1754c6583d1.png)
+
+![Wrong_classified](https://user-images.githubusercontent.com/6880439/209984146-6eeefd60-380d-42a2-a876-1ae0ec73ddfa.png)
+
+
+
