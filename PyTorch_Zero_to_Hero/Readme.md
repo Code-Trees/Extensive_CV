@@ -62,8 +62,6 @@ Above is the Loss graph for the model. The Loss is the combination of Loss 1 And
 
 ![loss](https://user-images.githubusercontent.com/6880439/209983658-d680f9ef-e252-4ecc-8277-ea457aa479c9.png)
 ![download1](https://user-images.githubusercontent.com/6880439/209984298-56ca476b-3205-4fe1-8b26-34229e292827.png)
-
-![download1](https://user-images.githubusercontent.com/6880439/209984314-3fc338ff-8944-46be-abdd-d29fad03de5b.png)
 ![download4](https://user-images.githubusercontent.com/6880439/209984317-941f55a8-0203-4300-afdb-c96f8f704207.png)
 ![download5](https://user-images.githubusercontent.com/6880439/209984322-d49ef84b-df24-492c-9cd0-727afdc4a765.png)
 
