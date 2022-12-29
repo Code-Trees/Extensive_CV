@@ -1,1 +1,4 @@
-.ipynb_checkpoints/
+.ipynb_checkpoints
+"Neural Architecture/_pycache__/"
+__pycache__/
+data/
